@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Determine Transport Method</h1>
+    <form id="transportForm">
+        <label for="distance">Enter Delivery Distance (in miles):</label>
+        <input type="number" id="distance" required>
+
+        <label for="overWater">Does this delivery cross a large body of water?</label>
+        <select id="overWater" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <button type="submit">Determine Transport</button>
+    </form>
+    <h2>Transport Details</h2>
+    <ul id="transports"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
